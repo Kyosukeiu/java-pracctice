@@ -1,16 +1,16 @@
 public class Test {
     public static void main(String[] args) {
-        int max = 100;
-        for (int i = 0; i <= max; i++) {
-            if (i % 15 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
+        for (int i = 0; i <= 10; i++) {
+            if (i == 5) {
+                System.out.println("次のループに進む");
+                continue;
             }
+            System.out.println("繰り返し：" + i + "回");
+        }
+        int i = 0;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
         }
     }
 }
